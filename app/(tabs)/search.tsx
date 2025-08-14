@@ -148,13 +148,13 @@ export default function SearchScreen() {
         )}
       </View>
 
-      {/* Results count */}{debouncedQuery.trim() && searchResults?.results && searchResults.results.length > 0 && (
+      {debouncedQuery.trim() && searchResults?.results && searchResults.results.length > 0 && (
         <View style={styles.resultsCount}>
           <Text style={styles.resultsText}>
             {searchResults.total_results} results found
           </Text>
         </View>
-      )}{/* Bottom padding for tab bar */}
+      )}
       <View style={styles.bottomPadding} />
     </SafeAreaView>
   );
