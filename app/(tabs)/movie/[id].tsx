@@ -136,7 +136,7 @@ export default function MovieDetailScreen() {
                     {(movie.vote_average ?? 0).toFixed(1)}
                   </Text>
                   <Text style={styles.voteCount}>
-                    ({movie.vote_count.toLocaleString()} votes)
+                    ({(movie.vote_count ?? 0).toLocaleString()} votes)
                   </Text>
                 </View>
               </View>
